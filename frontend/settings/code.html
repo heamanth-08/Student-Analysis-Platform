@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusIQ Settings</title>
+    <style>
+      :root { color-scheme: dark; font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif; background: #0b1326; color: #dae2fd; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; }
+      header { padding: 20px clamp(20px, 5vw, 64px); border-bottom: 1px solid #464555; background: #131b2e; }
+      header a { color: #93ccff; text-decoration: none; }
+      main { max-width: 900px; margin: 0 auto; padding: 32px 20px; }
+      h1 { margin: 0 0 8px; font-size: 28px; }
+      .intro { color: #c7c4d8; margin: 0 0 24px; }
+      form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+      label { display: grid; gap: 7px; color: #c7c4d8; font-size: 14px; }
+      input, select { width: 100%; padding: 10px 12px; color: #dae2fd; background: #171f33; border: 1px solid #464555; border-radius: 6px; font: inherit; }
+      .wide { grid-column: 1 / -1; }
+      .check { display: flex; align-items: center; gap: 10px; }
+      .check input { width: auto; }
+      button { width: fit-content; padding: 10px 16px; color: #fff; background: #4f46e5; border: 0; border-radius: 6px; font: inherit; cursor: pointer; }
+      @media (max-width: 600px) { form { grid-template-columns: 1fr; } .wide { grid-column: auto; } }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header><a href="../campus_overview_dashboard/code.html">CampusIQ</a></header>
+    <main>
+      <h1>Institution Settings</h1>
+      <p class="intro">Update the administrator profile and academic period used by CampusIQ.</p>
+      <form id="settings-form">
+        <label>Full name<input name="full_name" required /></label>
+        <label>Official email<input name="official_email" type="email" required /></label>
+        <label>Institutional role<input name="institutional_role" /></label>
+        <label>Department<input name="department" /></label>
+        <label>Academic year<input name="academic_year" /></label>
+        <label>Current term<input name="current_term" /></label>
+        <label>Theme<select name="theme"><option value="dark">Dark</option><option value="light">Light</option></select></label>
+        <label class="check wide"><input name="notifications_enabled" type="checkbox" /> Enable notifications</label>
+        <button class="wide" type="submit">Save settings</button>
+      </form>
+    </main>
+  </body>
+</html>

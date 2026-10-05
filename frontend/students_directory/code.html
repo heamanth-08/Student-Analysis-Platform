@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#006e4c", "outline-variant": "#464555", "background": "#0b1326", "error": "#ffb4ab", "primary-fixed-dim": "#c3c0ff", "tertiary-fixed": "#85f8c4", "on-background": "#dae2fd", "primary-container": "#4f46e5", "on-secondary-fixed": "#001d31", "on-primary": "#1d00a5", "on-primary-fixed": "#0f0069", "outline": "#918fa1", "on-error-container": "#ffdad6", "on-primary-container": "#dad7ff", "on-tertiary": "#003825", "on-error": "#690005", "surface-dim": "#0b1326", "secondary-container": "#3198dc", "on-surface": "#dae2fd", "inverse-on-surface": "#283044", "surface-container-lowest": "#060e20", "on-tertiary-container": "#7df1bd", "on-tertiary-fixed": "#002114", "on-surface-variant": "#c7c4d8", "tertiary-fixed-dim": "#68dba9", "primary": "#c3c0ff", "on-secondary-container": "#002c47", "secondary-fixed": "#cce5ff", "surface-variant": "#2d3449", "primary-fixed": "#e2dfff", "surface-container": "#171f33", "surface-container-high": "#222a3d", "inverse-surface": "#dae2fd", "error-container": "#93000a", "on-secondary": "#003351", "on-tertiary-fixed-variant": "#005137", "secondary-fixed-dim": "#93ccff", "on-secondary-fixed-variant": "#004b73", "surface-bright": "#31394d", "surface": "#0b1326", "on-primary-fixed-variant": "#3323cc", "tertiary": "#68dba9", "surface-container-highest": "#2d3449", "surface-tint": "#c3c0ff", "surface-container-low": "#131b2e", "secondary": "#93ccff", "inverse-primary": "#4d44e3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin": "2rem", "space-xs": "0.25rem", "margin-sm": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "gutter-sm": "1rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "body-lg": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "metric-number": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "label-sm": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "display-lg-mobile": [ "Plus Jakarta Sans" ], "label-md": [ "Inter" ] }, "fontSize": { "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "metric-number": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-low/90 backdrop-blur-md"><img alt="CampusIQ Academic Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X75m28T7xZFMSqE4lOwPgPCniuPcIuGxER_oRKllqVrQ-ZQCOHbS3c1-WeJZiJyxgeQEaHtnHALjmcebn6YYoquLuShfKRiyCfZx-MUVH_WPasAq1jU3dsWXKxwjHaN72OlLO7lFbA3Vn_XvfRnEZQW5rIFWC9MzRr6FGpaTa2dcDaCcap349r5EfnvRGu5ZT0sr4_slBSSZXwgXMpy36P3gwOCqHRC292Yk62LYqi5cz4ftvHfigP1Ms"/><div class="flex flex-col min-w-0"><span class="font-title-md text-title-md text-on-surface truncate leading-none">CampusIQ</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Student &amp; Campus Analytics</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm space-y-space-md"><nav class="space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_4px_14px_rgba(79,70,229,0.4)]"><div class="px-space-sm pt-space-xs pb-1 font-label-sm text-label-sm uppercase tracking-wider text-outline">OVERVIEW</div><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="font-body-md text-body-md">Dashboard</span></a><div class="px-space-sm pt-space-sm pb-1 font-label-sm text-label-sm uppercase tracking-wider text-outline">STUDENT ANALYTICS</div><a aria-current="page" class="flex items-center px-space-sm py-2 rounded-xl transition-colors bg-primary-container text-on-primary-container shadow-[0_4px_14px_rgba(79,70,229,0.4)]" data-path="students" href="#"><span class="font-body-md text-body-md">Students</span></a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="academics" href="#"><span class="font-body-md text-body-md">Academics</span></a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="attendance" href="#"><span class="font-body-md text-body-md">Attendance</span></a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="placements" href="#"><span class="font-body-md text-body-md">Placements</span></a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="achievements" href="#"><span class="font-body-md text-body-md">Achievements</span></a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="certifications-internships" href="#"><span class="font-body-md text-body-md">Certifications &amp; Internships</span></a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="research" href="#"><span class="font-body-md text-body-md">Research</span></a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="stride-points" href="#"><span class="font-body-md text-body-md">Stride Points</span></a><div class="px-space-sm pt-space-sm pb-1 font-label-sm text-label-sm uppercase tracking-wider text-outline">DATA MANAGEMENT</div><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="data-upload" href="#"><span class="font-body-md text-body-md">Data Upload</span></a><div class="px-space-sm pt-space-sm pb-1 font-label-sm text-label-sm uppercase tracking-wider text-outline">INSTITUTION</div><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="departments" href="#"><span class="font-body-md text-body-md">Departments</span></a><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="font-body-md text-body-md">Reports</span></a><div class="px-space-sm pt-space-sm pb-1 font-label-sm text-label-sm uppercase tracking-wider text-outline">SYSTEM</div><a class="flex items-center px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="font-body-md text-body-md">Settings</span></a></nav></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><button class="p-space-xs text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">menu_open</span></button><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="text-outline">Portal</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-title-md text-title-md">Campus Analytics</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="bg-surface-container-low text-on-surface placeholder:text-outline pl-9 pr-12 py-1.5 rounded-lg text-body-sm font-body-sm outline-none shadow-[inset_0_2px_4px_rgba(0,0,0,0.4),inset_0_0_0_1px_rgba(0,0,0,0.3)] focus:ring-1 focus:ring-primary" placeholder="Search records..." type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container-high text-outline text-[10px] font-mono shadow-sm">⌘K</kbd></div><div class="flex items-center bg-surface-container-low rounded-lg px-2.5 py-1.5 shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)]"><span class="material-symbols-outlined text-outline text-[16px] mr-1.5">calendar_month</span><select class="bg-transparent text-on-surface text-body-sm font-body-sm outline-none cursor-pointer"><option class="bg-surface-container-high text-on-surface" value="2024-25">2024-25</option><option class="bg-surface-container-high text-on-surface" value="2023-24">2023-24</option></select></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VxVaEvhMFpQ4xhm541_5iceQcP-ls-G4bY0r-JgmwvYN_Fx-htntTl7YitDZO3KHHmoXt04lepPlPnnoNcMaNx4ZSFfhJNQdDrbDaD9CO3HcDy1SJvlwjIpXWPoe_cRStZIKzKeokYqktsIZ722BwRl2ia_XqR8R6uPj6BEsOkYejGYXK1qNC-r6eg5y_IFCAbhppsycAhjFkkSzn3hkdYYPdQAw7G8eZVrCVT0hTDoZYh92VE6nHuZg"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary shadow-[0_0_0_2px_#0b1326]"></span></div></div></div></header><main class="w-full pt-16 bg-surface flex-1 px-gutter py-space-lg"><div class="flex flex-col w-full space-y-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Institutional Cohort</span>
+<span class="text-outline text-[12px]">•</span>
+<span class="font-label-sm text-label-sm text-tertiary">AY 2024–25 Active Session</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Students Directory</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Search, filter, and inspect student academic standing, attendance metrics, and Stride Points.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-3.5 py-2 rounded-xl bg-surface-container-high text-on-surface font-title-md text-body-sm shadow-[0_4px_14px_rgba(0,0,0,0.25)] hover:bg-surface-container-highest transition-all duration-200" id="toggleFilterBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">tune</span>
+<span>Filter Cohort</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary ml-0.5"></span>
+</button>
+<div class="relative">
+<select class="appearance-none bg-surface-container-high text-on-surface font-title-md text-body-sm pl-3 pr-8 py-2 rounded-xl shadow-[0_4px_14px_rgba(0,0,0,0.25)] cursor-pointer outline-none hover:bg-surface-container-highest transition-colors">
+<option value="cgpa_desc">Sort: CGPA (High-Low)</option>
+<option value="stride_desc">Sort: Stride Points (High-Low)</option>
+<option value="attendance_desc">Sort: Attendance</option>
+<option value="name_asc">Sort: Student Name</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">expand_more</span>
+</div>
+<button class="flex items-center gap-space-xs px-3.5 py-2 rounded-xl bg-surface-container-high text-on-surface font-title-md text-body-sm shadow-[0_4px_14px_rgba(0,0,0,0.25)] hover:bg-surface-container-highest transition-all duration-200" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Export CSV</span>
+</button>
+<button class="flex items-center gap-space-xs px-4 py-2 rounded-xl bg-primary-container text-on-primary-container font-title-md text-body-sm shadow-[0_4px_14px_rgba(79,70,229,0.4)] hover:brightness-110 active:scale-95 transition-all duration-150" type="button">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>Add Student</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary/5 blur-2xl group-hover:bg-primary/10 transition-all pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Total Enrolled</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-metric-number text-metric-number text-on-surface font-bold">4,820</span>
+<span class="font-label-md text-label-md text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>+3.8%
+        </span>
+</div>
+<div class="mt-space-xs text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
+<span>Across 7 Departments</span>
+<span class="text-outline">•</span>
+<span class="text-outline">Sem 1–8</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary/5 blur-2xl group-hover:bg-secondary/10 transition-all pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">High Honors (CGPA &gt; 8.5)</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">military_tech</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-metric-number text-metric-number text-on-surface font-bold">1,428</span>
+<span class="font-label-md text-label-md text-secondary">29.6% Cohort</span>
+</div>
+<div class="mt-space-xs text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Eligible for Premier Fellowships</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary/5 blur-2xl group-hover:bg-tertiary/10 transition-all pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Average Stride Points</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-metric-number text-metric-number text-on-surface font-bold">742</span>
+<span class="font-title-md text-title-md text-tertiary">pts</span>
+</div>
+<span class="font-label-md text-label-md text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>+48 pts
+        </span>
+</div>
+<div class="mt-space-xs text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
+<span>Curricular &amp; Leadership metric</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-error/5 blur-2xl group-hover:bg-error/10 transition-all pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Attendance Watchlist</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-metric-number text-metric-number text-error font-bold">184</span>
+<span class="font-label-sm text-label-sm bg-error-container/30 text-error px-2 py-0.5 rounded-full font-semibold uppercase tracking-wider">&lt;75% Cutoff</span>
+</div>
+<div class="mt-space-xs text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
+<span>3.8% of total student body</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<div class="relative flex-1 max-w-xl">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-outline pl-11 pr-24 py-2.5 rounded-xl font-body-md text-body-md outline-none shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] focus:shadow-[inset_0_2px_4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(195,192,255,0.4)] transition-all" placeholder="Search by student name, roll number, or institutional email..." type="text"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-outline uppercase tracking-wider">ENTER TO SUBMIT</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0">
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-primary font-title-md text-body-sm whitespace-nowrap shadow-sm hover:bg-surface-container-highest flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>All Students</span>
+<span class="text-on-surface-variant font-mono text-[11px] bg-surface-container px-1.5 py-0.2 rounded-full">4,820</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-title-md text-body-sm whitespace-nowrap hover:bg-surface-container-high transition-colors">
+<span>Placed (2025)</span>
+<span class="font-mono text-[11px] text-outline ml-1">612</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-title-md text-body-sm whitespace-nowrap hover:bg-surface-container-high transition-colors">
+<span>At Risk (&lt;75%)</span>
+<span class="font-mono text-[11px] text-error ml-1">184</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-title-md text-body-sm whitespace-nowrap hover:bg-surface-container-high transition-colors">
+<span>Stride &gt; 800</span>
+<span class="font-mono text-[11px] text-tertiary ml-1">520</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-space-md shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] transition-all" id="filterDrawer">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-surface-container-highest">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">filter_list</span>
+<span class="font-title-md text-title-md text-on-surface">Dimensional Cohort Filters</span>
+</div>
+<button class="font-label-sm text-label-sm text-outline hover:text-primary transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">restart_alt</span>
+<span>Reset Filters</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Academic Department</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg outline-none cursor-pointer appearance-none shadow-[inset_0_1px_3px_rgba(0,0,0,0.3)]">
+<option>All Departments</option>
+<option>CSE (Computer Science)</option>
+<option>AI &amp; DS (Artificial Intelligence)</option>
+<option>IT (Information Tech)</option>
+<option>ECE (Electronics &amp; Comm)</option>
+<option>EEE (Electrical &amp; Electronics)</option>
+<option>Mech (Mechanical)</option>
+<option>Civil Engineering</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[16px]">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Semester Level</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg outline-none cursor-pointer appearance-none shadow-[inset_0_1px_3px_rgba(0,0,0,0.3)]">
+<option>Semesters 1 through 8</option>
+<option>First Year (Sem 1 &amp; 2)</option>
+<option>Second Year (Sem 3 &amp; 4)</option>
+<option>Third Year (Sem 5 &amp; 6)</option>
+<option>Final Year (Sem 7 &amp; 8)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[16px]">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">CGPA Standing</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg outline-none cursor-pointer appearance-none shadow-[inset_0_1px_3px_rgba(0,0,0,0.3)]">
+<option>All Bands (&gt; 0.00)</option>
+<option>Tier 1: High Distinction (&gt; 9.0)</option>
+<option>Tier 2: Distinction (8.0 - 9.0)</option>
+<option>Tier 3: First Class (7.0 - 8.0)</option>
+<option>Tier 4: Academic Watch (&lt; 7.0)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[16px]">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Attendance Threshold</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg outline-none cursor-pointer appearance-none shadow-[inset_0_1px_3px_rgba(0,0,0,0.3)]">
+<option>All Attendances</option>
+<option class="text-error">Critical Action (&lt; 75%)</option>
+<option>Target Range (75% - 90%)</option>
+<option>Exemplary (&gt; 90%)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[16px]">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container/60 text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-space-lg">Student Profile</th>
+<th class="py-3.5 px-space-md">Department &amp; Sem</th>
+<th class="py-3.5 px-space-md">CGPA &amp; Momentum</th>
+<th class="py-3.5 px-space-md">Attendance %</th>
+<th class="py-3.5 px-space-md">Placement Milestone</th>
+<th class="py-3.5 px-space-md">Stride Points</th>
+<th class="py-3.5 px-space-lg text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 font-body-md text-body-md text-on-surface">
+<tr class="hover:bg-surface-container/70 transition-colors group">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high shrink-0" data-alt="Portrait of Aarav Sharma, a confident male university engineering student in dark blue academic polo with subtle rim lighting and neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-imgv56UEI-vFFHLZtDf5i8NxsqKv9RqEGW2M800wnnaH0iMgwrcDgiaW0qFo9ilSYVAaKWrdFjXZ51zw2PVGx6l-WzM_K0kDsms_w5eR3omvXNkmFeVDRTUftbm5fn1sr9Vj-oI7IEqUY7ur5ON6ZWgzCcC3czGp3ZlRAozkbkBx-yaxcUn0WMBzSEqEYPR9pLwUkyqzcdfFpA_RRE-jRRP3rM7L1tE5SsbUX3YIveo-faChre5E"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Aarav Sharma</span>
+<div class="flex items-center gap-1.5">
+<span class="font-mono text-[11px] text-outline font-medium">21CS042</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">aarav.s@campusiq.edu</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">CSE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Semester 6 • Cohort '25</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">9.42</span>
+<div class="flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-tertiary-container/30 text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+0.18</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col gap-1.5 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="font-semibold text-on-surface">94.2%</span>
+<span class="font-body-sm text-body-sm text-tertiary">Optimal</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 94.2%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-title-md text-body-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-semibold text-tertiary">Placed</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="text-on-surface-variant">Microsoft</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">workspace_premium</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">920</span>
+<span class="font-label-sm text-label-sm text-tertiary">pts</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold uppercase tracking-wider">Outstanding</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" title="View Full Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary transition-colors" title="Generate Academic Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">summarize</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/70 transition-colors group">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high shrink-0" data-alt="Portrait of Priya Nair, female university computer science and artificial intelligence student with smart glasses and focused analytical posture, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBLIS4VnJKEo-3pewJCjC3vMJQMvxHuDaOQsUx3LIEBALEBY-kbmurBKYzPQF3SSlUsxH_L1up4ZSOKE6CYLKz2T4Kf5kguW1G9C1nTCaqqc_stCLqsgyJEBXlvohklvFezSqroYzfjTHwPL-rdsNwk8Uipua7swXK3xeQABLVaUGBHt_txrd0KPnLXbxzgV2sXJXvj19jVl07GhBdpqHhIFXVdmLPA9EoRGacZ3LGynfZSR1GjGJu"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Priya Nair</span>
+<div class="flex items-center gap-1.5">
+<span class="font-mono text-[11px] text-outline font-medium">21AD018</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">priya.n@campusiq.edu</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">AI &amp; DS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Semester 6 • Cohort '25</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">9.18</span>
+<div class="flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-tertiary-container/30 text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+0.05</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col gap-1.5 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="font-semibold text-on-surface">91.0%</span>
+<span class="font-body-sm text-body-sm text-tertiary">Optimal</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 91.0%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-title-md text-body-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-semibold text-tertiary">Placed</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="text-on-surface-variant">Google</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">workspace_premium</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">880</span>
+<span class="font-label-sm text-label-sm text-tertiary">pts</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold uppercase tracking-wider">Outstanding</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" title="View Full Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary transition-colors" title="Generate Academic Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">summarize</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/70 transition-colors group">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high shrink-0" data-alt="Portrait of Rohan Varma, South Asian young adult male student in a dark charcoal jacket, attentive expression against dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGTyfRCLtUB-RM_X6BEvrjIQlGhVH_0NcHF4Q3BmBvzAFUK28FYvzvAjVv4gYBDFKzgs-HYpicKhy_orl9i8tf_ck0Xhbsdf5F0bhpsvUdS_eD_6OuunvVjytXRrgI3MwssL2VYDfJOSgxi8dToclBWSl6OydU1lPoFkyRqxKaHFbh_BkxZmgzUlhLpHrK09-2MmHODtKS66DXDLeoLF7mSfPp9SCkOGBxDaf0g_XmRWNG06tTpbxo"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Rohan Varma</span>
+<div class="flex items-center gap-1.5">
+<span class="font-mono text-[11px] text-outline font-medium">21IT089</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">rohan.v@campusiq.edu</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">IT</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Semester 6 • Cohort '25</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">8.65</span>
+<div class="flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">horizontal_rule</span>
+<span>0.00</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col gap-1.5 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="font-semibold text-on-surface">88.4%</span>
+<span class="font-body-sm text-body-sm text-secondary">Good</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 88.4%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/20 text-secondary font-title-md text-body-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-semibold">Interviewing</span>
+<span class="text-outline text-body-sm">(Tier 1)</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">740</span>
+<span class="font-label-sm text-label-sm text-secondary">pts</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Advanced</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" title="View Full Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary transition-colors" title="Generate Academic Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">summarize</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/70 transition-colors group">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high shrink-0" data-alt="Portrait of Ananya Iyer, young female Indian electronics student, gentle confident smile, wearing dark round glasses in academic ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABezR0fTCs4EBMICN9YCnDzpnC_KtwxMFfHJ1AjpYFIVluTJu9fnsJ6SQxWq6zYyFuZ3RawIVSeD_97wdsU8buaSbLaMrXuTCA47fr0hQsU37qVbfIrEhECxCgUeQz849BSPVbx8rhwh7SF5bQZSj-8FWH_FdBqT_NbARmsg034BwVivqzCZHpOKUCfIumSLaIltAdPtZXlNFag0bBa-fzgIqXlZwYYBsffm-VsGN-QLtLlKAl4nJH"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Ananya Iyer</span>
+<div class="flex items-center gap-1.5">
+<span class="font-mono text-[11px] text-outline font-medium">22EC031</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">ananya.i@campusiq.edu</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">ECE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Semester 4 • Cohort '26</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">8.84</span>
+<div class="flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-tertiary-container/30 text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+0.22</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col gap-1.5 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="font-semibold text-on-surface">82.5%</span>
+<span class="font-body-sm text-body-sm text-secondary">Good</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 82.5%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-title-md text-body-sm">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Eligible</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">award_star</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">690</span>
+<span class="font-label-sm text-label-sm text-primary">pts</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Active</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" title="View Full Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary transition-colors" title="Generate Academic Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">summarize</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/70 transition-colors group bg-error-container/5">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high shrink-0" data-alt="Portrait of Karthik Rajan, young adult male college student with clean trimmed beard in dark green casual shirt, indoor institutional background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkvY-ZnGrTVSK8jeBrvYljWu6AhuyeHZr-TRGCJuA60X5jt12aJlShzOnyyHAgBQPyTWHnYogvfLbZdRISFXPQx8GiQvbNlNqf4-Iv5RoDL3Zn6_jMBAawik_hRO8U_Qi6FiEoCinFmgmvs93bwJQlnCKNWREYgnKAIYWgQu712QJK9EIzT9E_jBGqdz7I0glTSBDvjbS8yW343pajM4NZwqGXwLFs9PYZk1YC3mp8W-G9A8ei3j4x"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Karthik Rajan</span>
+<span class="w-2 h-2 rounded-full bg-error" title="Attendance Alert"></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-mono text-[11px] text-outline font-medium">22EE055</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">karthik.r@campusiq.edu</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">EEE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Semester 4 • Cohort '26</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">7.40</span>
+<div class="flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-error-container/30 text-error font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+<span>-0.12</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col gap-1.5 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="font-semibold text-error">71.2%</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-error-container/40 text-error font-bold uppercase">At Risk</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 71.2%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-title-md text-body-sm">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Eligible</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">hotel_class</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">420</span>
+<span class="font-label-sm text-label-sm text-outline">pts</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase tracking-wider">Developing</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" title="View Full Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-error/20 text-error transition-colors" title="Send Attendance Warning Notice" type="button">
+<span class="material-symbols-outlined text-[18px]">notification_important</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/70 transition-colors group">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high shrink-0" data-alt="Portrait of Meera Patel, young female first year engineering student with cheerful energetic demeanor and crisp navy hoodie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdKzJTMOchGdb_1HT0sBNk7QwoT1YnvcTgLyWizaCZ3CpR6v6Gk4idTnarFbm_p7xCmJl8GxPomVbqKis4Lm65nTiMQUQKw9r7NzWYXDkb67HCbRhnRbjx9B8y4iPD6gVy-QgOI4rndzHAJHWBSBGggpAqde4jbwWBaCVAUpVBfzUXfYIOvBoNbG-Ddat_c6ZLt5QseAgRthcQdLC0RTNWuH6Fmy_cb2RN71zZbgwMy7mxDsyohBn4"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Meera Patel</span>
+<div class="flex items-center gap-1.5">
+<span class="font-mono text-[11px] text-outline font-medium">23CS112</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">meera.p@campusiq.edu</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">CSE</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Semester 2 • Cohort '27</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">8.92</span>
+<div class="flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-tertiary-container/30 text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+0.30</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col gap-1.5 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="font-semibold text-on-surface">96.0%</span>
+<span class="font-body-sm text-body-sm text-tertiary">Exemplary</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 96.0%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-outline font-title-md text-body-sm">
+<span class="material-symbols-outlined text-[14px]">school</span>
+<span>First Year</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">award_star</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">540</span>
+<span class="font-label-sm text-label-sm text-primary">pts</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Active</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" title="View Full Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary transition-colors" title="Generate Academic Dossier" type="button">
+<span class="material-symbols-outlined text-[18px]">summarize</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/70 transition-colors group bg-error-container/5">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high shrink-0" data-alt="Portrait of Vikram Deshmukh, serious adult male mechanical engineering student with sharp focused eyes in academic lab lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhVAxeHk2BPeg9SqjEyo_j0stAq3cxohjrt8cJpZyPQKmuosSEQmWOTE1CmIboMGFcn9gpQp9-ddfsSkeYypsYHi-lVYYOThiUD05Fxs6B2qLI1YvWij2p0UDcU5SlZ0-nF7f9Ofj4CvFgehcJgPj4H0kaZBqNK1-0cdcHhSIAj7AmN6NNuOqYcNPbkjucB6kufOi3JaqIPnH8ZpH1G8dz4I69eYhFa40u37fBrON5hhK2NnLvu_yl"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors truncate">Vikram Deshmukh</span>
+<span class="w-2 h-2 rounded-full bg-error" title="Critical Attendance Warning"></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-mono text-[11px] text-outline font-medium">21ME074</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">vikram.d@campusiq.edu</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Mech</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Semester 6 • Cohort '25</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-lg text-title-lg text-on-surface font-bold">7.15</span>
+<div class="flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-error-container/30 text-error font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+<span>-0.24</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col gap-1.5 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="font-semibold text-error">68.5%</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-error-container text-on-error font-bold uppercase">Critical</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 68.5%"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container/20 text-error font-title-md text-body-sm">
+<span class="material-symbols-outlined text-[14px]">pending_actions</span>
+<span>Under Review</span>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">history_edu</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">310</span>
+<span class="font-label-sm text-label-sm text-outline">pts</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase tracking-wider">Beginner</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" title="View Full Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-error/20 text-error transition-colors" title="Send Attendance Warning Notice" type="button">
+<span class="material-symbols-outlined text-[18px]">notification_important</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="px-space-lg py-space-md bg-surface-container/40 flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>Showing</span>
+<span class="font-semibold text-on-surface">1–7</span>
+<span>of</span>
+<span class="font-semibold text-on-surface">4,820</span>
+<span>registered students</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-outline bg-surface-container-high opacity-50 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container font-title-md text-body-sm flex items-center justify-center shadow-sm" type="button">
+          1
+        </button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-title-md text-body-sm flex items-center justify-center transition-colors" type="button">
+          2
+        </button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-title-md text-body-sm flex items-center justify-center transition-colors" type="button">
+          3
+        </button>
+<span class="px-1 text-outline font-mono text-[12px]">...</span>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-title-md text-body-sm flex items-center justify-center transition-colors" type="button">
+          689
+        </button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const toggleBtn = document.getElementById('toggleFilterBtn');
+    const filterDrawer = document.getElementById('filterDrawer');
+    if (toggleBtn && filterDrawer) {
+      toggleBtn.addEventListener('click', () => {
+        filterDrawer.classList.toggle('hidden');
+      });
+    }
+  })();
+</script></main></div></body></html>
