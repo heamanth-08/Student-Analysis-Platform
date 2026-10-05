@@ -1,50 +1,74 @@
 # Student Analysis Platform
 
-## Centralized Student Achievement and Campus Performance Analytics System
+This repository contains the frontend and backend for the Student Analysis Platform.
 
-The **Student Analysis Platform** is a centralized analytics system designed to collect, manage, analyze, and visualize student achievement and campus performance data.
+## Project Structure
 
-The platform brings data from different departments into a centralized system and provides meaningful analytics related to academic performance, attendance, placements, sports, hackathons, clubs, certifications, internships, research publications, and department-wise performance.
+- `frontend/`: Contains the user interface built with Vite.
+- `backend/`: Contains the REST API built with Python (FastAPI).
 
----
+## Prerequisites
 
-## 📌 Problem Statement
+Before running the project, make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (for the frontend)
+- [Python 3.8+](https://www.python.org/downloads/) (for the backend)
 
-Educational institutions generate large amounts of student performance and achievement data across different departments and activities.
+## How to Run Manually
 
-This data is often maintained in separate Excel or CSV files, making it difficult to:
+### 1. Start the Backend
 
-- Consolidate student information
-- Track overall student performance
-- Compare department-level performance
-- Identify student achievements
-- Analyze placement and attendance trends
-- Monitor extracurricular activities
-- Generate meaningful performance insights
+Open a terminal and navigate to the `backend` directory:
 
-The Student Analysis Platform addresses these challenges through a centralized analytics system.
+```bash
+cd backend
+```
 
----
+Create a virtual environment and activate it:
 
-## 💡 Proposed Solution
+**On Windows:**
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
 
-The system collects structured data from different departments, processes and validates the data using Python, stores the required information in a database, and presents the results through an interactive web-based dashboard.
+**On macOS/Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-### System Workflow
+Install the required Python packages:
 
-```text
-Department Data
-      ↓
-Excel / CSV Upload
-      ↓
-Data Validation
-      ↓
-Data Cleaning & Processing
-      ↓
-Centralized Database
-      ↓
-Analytics Processing
-      ↓
-Interactive Dashboard
-      ↓
-Student & Department Insights
+```bash
+pip install -r requirements.txt
+```
+
+Run the FastAPI server:
+
+```bash
+uvicorn app.main:app --reload
+```
+The backend server will start at `http://127.0.0.1:8000`.
+
+
+### 2. Start the Frontend
+
+Open a **new** terminal window and navigate to the `frontend` directory:
+
+```bash
+cd frontend
+```
+
+Install the required Node packages:
+
+```bash
+npm install
+```
+
+Start the Vite development server:
+
+```bash
+npm run dev
+```
+
+The frontend will start locally. The terminal output will show you the exact local URL (typically `http://localhost:5173` or `http://localhost:3000`) where you can view the application in your browser.
