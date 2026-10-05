@@ -72,3 +72,33 @@ npm run dev
 ```
 
 The frontend will start locally. The terminal output will show you the exact local URL (typically `http://localhost:5173` or `http://localhost:3000`) where you can view the application in your browser.
+
+## Deployment Instructions
+
+### Deploying the Frontend
+
+You can easily deploy the frontend to services like Vercel or Netlify.
+
+**Using Vercel:**
+1. Sign up on [Vercel](https://vercel.com/) with your GitHub account.
+2. Add a new project and select the `Student-Analysis-Platform` repository.
+3. In the project settings, set the **Root Directory** to `frontend`.
+4. The Build Command (`npm run build`) and Output Directory (`dist`) should be auto-detected.
+5. Click **Deploy**. Your frontend will be live in a few minutes.
+
+### Deploying the Backend
+
+You can deploy the Python FastAPI backend to services like Render or Railway.
+
+**Using Render:**
+1. Sign up on [Render](https://render.com/) with your GitHub account.
+2. Click on **New** -> **Web Service**.
+3. Connect your GitHub repository.
+4. Set the **Root Directory** to `backend`.
+5. Set the **Environment** to `Python`.
+6. Set the **Build Command** to `pip install -r requirements.txt`.
+7. Set the **Start Command** to `uvicorn app.main:app --host 0.0.0.0 --port $PORT`.
+8. Click **Create Web Service**.
+
+### Connecting Frontend to Backend
+Once your backend is deployed, you will receive a public URL. Update the API base URL in your frontend code (or add it as an environment variable in your Vercel/Netlify dashboard) to point to the newly deployed backend URL.
